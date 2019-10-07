@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             window = UIWindow(windowScene: windowScene)
            
-            window!.rootViewController = MainMenuViewController()
+            window!.rootViewController = LoginViewController()
             window!.makeKeyAndVisible()
             
 //            let window = UIWindow(windowScene: windowScene)

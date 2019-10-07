@@ -29,6 +29,7 @@ class LoginView: UIView {
     }
     
     func setupSubViews() {
+        addSubview(backgroundImageView)
         addSubview(logoImageView)
         addSubview(baseImageView)
         addSubview(usernameField)
@@ -49,6 +50,14 @@ class LoginView: UIView {
     let baseImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "BaseImage")
+        imageView.alpha = 0.7
+        
+        return imageView
+    }()
+    
+    let backgroundImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "background")
         
         
         return imageView
@@ -94,6 +103,7 @@ class LoginView: UIView {
         textField.textColor = .black
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
+        textField.isSecureTextEntry = true
         
         return textField
     }()

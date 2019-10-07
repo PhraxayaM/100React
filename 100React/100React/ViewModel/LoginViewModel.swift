@@ -11,9 +11,14 @@ import UIKit
 
 
 class LoginViewModel {
+    let network = NetworkingService()
     
-    func loginTapped() {
-        print("logging in..")
+    func loginTapped(username: String, password: String) {
+        let user = username
+        let pass = password
+        network.login(params: ["username": user, "password": pass], completion: {
+            print("logging in..")
+        })
     }
     
 }

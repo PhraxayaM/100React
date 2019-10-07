@@ -43,7 +43,9 @@ class LoginViewController: UIViewController {
     }
     
     @objc func loginTapped() {
-        viewModel.loginTapped()
+        let user = loginView.usernameField.text!
+        let pass = loginView.passwordField.text!
+        viewModel.loginTapped(username: user, password: pass)
     }
     
 

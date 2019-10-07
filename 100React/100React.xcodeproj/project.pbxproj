@@ -17,6 +17,7 @@
 		8D1452E02342F62B00CB92B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452DF2342F62B00CB92B8 /* LoginViewController.swift */; };
 		8D1452E62342FA5600CB92B8 /* LoginViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452E52342FA5600CB92B8 /* LoginViewConstraints.swift */; };
 		8D1452E8234318A900CB92B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452E7234318A900CB92B8 /* LoginViewModel.swift */; };
+		8D1452EF234ADF2100CB92B8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452EE234ADF2100CB92B8 /* NetworkingService.swift */; };
 		CD6017BA2344F6BE00BE091D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017B92344F6BE00BE091D /* MainMenuView.swift */; };
 		CD6017BC2344FB9A00BE091D /* MainMenuViewContraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */; };
 		CD6017BE23465A7D00BE091D /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017BD23465A7D00BE091D /* MainMenuController.swift */; };
@@ -49,6 +50,7 @@
 		8D1452DF2342F62B00CB92B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8D1452E52342FA5600CB92B8 /* LoginViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewConstraints.swift; sourceTree = "<group>"; };
 		8D1452E7234318A900CB92B8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8D1452EE234ADF2100CB92B8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		CD6017B92344F6BE00BE091D /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewContraint.swift; sourceTree = "<group>"; };
 		CD6017BD23465A7D00BE091D /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		8D1452B62342F22700CB92B8 /* 100React */ = {
 			isa = PBXGroup;
 			children = (
+				8D1452ED234ADF0F00CB92B8 /* Networking */,
 				8D1452E12342F9F000CB92B8 /* Extensions */,
 				8D1452DE2342F61A00CB92B8 /* Controller */,
 				8D1452DB2342F2FE00CB92B8 /* Model */,
@@ -185,6 +188,14 @@
 			children = (
 			);
 			path = ControllerConstraints;
+			sourceTree = "<group>";
+		};
+		8D1452ED234ADF0F00CB92B8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8D1452EE234ADF2100CB92B8 /* NetworkingService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				8D1452E02342F62B00CB92B8 /* LoginViewController.swift in Sources */,
 				8D1452BC2342F22700CB92B8 /* ContentView.swift in Sources */,
 				8D1452E8234318A900CB92B8 /* LoginViewModel.swift in Sources */,
+				8D1452EF234ADF2100CB92B8 /* NetworkingService.swift in Sources */,
 				CD6017BE23465A7D00BE091D /* MainMenuController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
