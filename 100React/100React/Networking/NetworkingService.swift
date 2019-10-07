@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkingService {
 
-func login(params: Dictionary<String, Any>, completion: @escaping ()->()) {
+    func login(params: Dictionary<String, Any>, completion: @escaping ([String: String])->()) {
         
         
         // prepare json data
@@ -53,7 +53,7 @@ func login(params: Dictionary<String, Any>, completion: @escaping ()->()) {
                     return
                 }
                 print(responseJSON as Any)
-                completion()
+                completion(responseJSON)
             }
         }
         task.resume()

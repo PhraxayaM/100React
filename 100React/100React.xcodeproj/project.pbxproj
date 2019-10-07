@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		777CC84C09B56F3F393B189B /* Pods_100ReactTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BBD7C37B687D3691236DB7 /* Pods_100ReactTests.framework */; };
 		8D1452B82342F22700CB92B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452B72342F22700CB92B8 /* AppDelegate.swift */; };
 		8D1452BA2342F22700CB92B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452B92342F22700CB92B8 /* SceneDelegate.swift */; };
 		8D1452BC2342F22700CB92B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452BB2342F22700CB92B8 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 		8D1452E62342FA5600CB92B8 /* LoginViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452E52342FA5600CB92B8 /* LoginViewConstraints.swift */; };
 		8D1452E8234318A900CB92B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452E7234318A900CB92B8 /* LoginViewModel.swift */; };
 		8D1452EF234ADF2100CB92B8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452EE234ADF2100CB92B8 /* NetworkingService.swift */; };
+		BF1FEAA915C3A2E8B994F630 /* Pods_100React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6FF66C0F339D1BAF3CD92A /* Pods_100React.framework */; };
 		CD6017BA2344F6BE00BE091D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017B92344F6BE00BE091D /* MainMenuView.swift */; };
 		CD6017BC2344FB9A00BE091D /* MainMenuViewContraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */; };
 		CD6017BE23465A7D00BE091D /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017BD23465A7D00BE091D /* MainMenuController.swift */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		118912E10EF83847C431B3B2 /* Pods-100ReactTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-100ReactTests.release.xcconfig"; path = "Target Support Files/Pods-100ReactTests/Pods-100ReactTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A36D20F9EF0052B1D770BA5 /* Pods-100React.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-100React.release.xcconfig"; path = "Target Support Files/Pods-100React/Pods-100React.release.xcconfig"; sourceTree = "<group>"; };
+		72BBD7C37B687D3691236DB7 /* Pods_100ReactTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_100ReactTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1452B42342F22700CB92B8 /* 100React.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100React.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1452B72342F22700CB92B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D1452B92342F22700CB92B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 		CD6017BD23465A7D00BE091D /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		CD6017BF2346BA8400BE091D /* CreateNewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewSessionView.swift; sourceTree = "<group>"; };
 		CD6017C12346BBD900BE091D /* CreateNewSessionConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewSessionConstraint.swift; sourceTree = "<group>"; };
+		E1B2072171AD322E53D2A119 /* Pods-100ReactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-100ReactTests.debug.xcconfig"; path = "Target Support Files/Pods-100ReactTests/Pods-100ReactTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC6FF66C0F339D1BAF3CD92A /* Pods_100React.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_100React.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD053363EE98E0EF9287EA65 /* Pods-100React.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-100React.debug.xcconfig"; path = "Target Support Files/Pods-100React/Pods-100React.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1FEAA915C3A2E8B994F630 /* Pods_100React.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,18 +79,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777CC84C09B56F3F393B189B /* Pods_100ReactTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BC62AA95E5074562FDC6834 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD053363EE98E0EF9287EA65 /* Pods-100React.debug.xcconfig */,
+				4A36D20F9EF0052B1D770BA5 /* Pods-100React.release.xcconfig */,
+				E1B2072171AD322E53D2A119 /* Pods-100ReactTests.debug.xcconfig */,
+				118912E10EF83847C431B3B2 /* Pods-100ReactTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D1452AB2342F22700CB92B8 = {
 			isa = PBXGroup;
 			children = (
 				8D1452B62342F22700CB92B8 /* 100React */,
 				8D1452CD2342F22800CB92B8 /* 100ReactTests */,
 				8D1452B52342F22700CB92B8 /* Products */,
+				3BC62AA95E5074562FDC6834 /* Pods */,
+				E89713F0EBB226222F8B49B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +221,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		E89713F0EBB226222F8B49B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC6FF66C0F339D1BAF3CD92A /* Pods_100React.framework */,
+				72BBD7C37B687D3691236DB7 /* Pods_100ReactTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D1452D32342F22800CB92B8 /* Build configuration list for PBXNativeTarget "100React" */;
 			buildPhases = (
+				4F5F7BB53730D3A02C14CE84 /* [CP] Check Pods Manifest.lock */,
 				8D1452B02342F22700CB92B8 /* Sources */,
 				8D1452B12342F22700CB92B8 /* Frameworks */,
 				8D1452B22342F22700CB92B8 /* Resources */,
+				D25193E25D4B77633DE870D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D1452D62342F22800CB92B8 /* Build configuration list for PBXNativeTarget "100ReactTests" */;
 			buildPhases = (
+				CD6A12A458A75BEA916E649E /* [CP] Check Pods Manifest.lock */,
 				8D1452C62342F22800CB92B8 /* Sources */,
 				8D1452C72342F22800CB92B8 /* Frameworks */,
 				8D1452C82342F22800CB92B8 /* Resources */,
@@ -292,6 +327,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F5F7BB53730D3A02C14CE84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-100React-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6A12A458A75BEA916E649E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-100ReactTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D25193E25D4B77633DE870D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-100React/Pods-100React-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-100React/Pods-100React-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-100React/Pods-100React-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D1452B02342F22700CB92B8 /* Sources */ = {
@@ -460,6 +559,7 @@
 		};
 		8D1452D42342F22800CB92B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD053363EE98E0EF9287EA65 /* Pods-100React.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +580,7 @@
 		};
 		8D1452D52342F22800CB92B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A36D20F9EF0052B1D770BA5 /* Pods-100React.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +601,7 @@
 		};
 		8D1452D72342F22800CB92B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B2072171AD322E53D2A119 /* Pods-100ReactTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +624,7 @@
 		};
 		8D1452D82342F22800CB92B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118912E10EF83847C431B3B2 /* Pods-100ReactTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

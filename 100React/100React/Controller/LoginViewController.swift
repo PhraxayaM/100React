@@ -45,7 +45,13 @@ class LoginViewController: UIViewController {
     @objc func loginTapped() {
         let user = loginView.usernameField.text!
         let pass = loginView.passwordField.text!
-        viewModel.loginTapped(username: user, password: pass)
+        let success = viewModel.loginTapped(username: user, password: pass)
+        
+        if success {
+            let nav = UINavigationController()
+            nav.viewControllers = [MainMenuViewController()]
+            UIApplication.shared.windows.first?.rootViewController = nav
+        }
     }
     
 
