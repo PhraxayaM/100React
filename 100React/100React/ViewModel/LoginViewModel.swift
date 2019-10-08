@@ -8,12 +8,30 @@
 
 import Foundation
 import UIKit
-
+import KeychainSwift
 
 class LoginViewModel {
+    let network = NetworkingService()
+    let keychain = KeychainSwift()
+    let defaults = UserDefaults.standard
     
-    func loginTapped() {
-        print("logging in..")
+    func loginTapped(username: String, password: String) -> Bool {
+        let user = username
+        let pass = password
+        network.login(params: ["username": user, "password": pass], completion: { response in
+            guard let token = response["token"] else { return }
+            guard let user = response["username"] else { return }
+            
+            self.keychain.set(token, forKey: "Token")
+            self.defaults.set(user, forKey: "User")
+            self.defaults.set(true, forKey: "LoggedIn")
+            
+        })
+        
+        if self.defaults.bool(forKey: "LoggedIn") {
+            return true
+        }
+        return false
     }
     
 }

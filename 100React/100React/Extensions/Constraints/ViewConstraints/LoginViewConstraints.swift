@@ -12,6 +12,18 @@ extension LoginView {
     
     func setViewConstraints() {
         
+        
+        // Background Image View Constraints
+        
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        backgroundImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: -100).isActive = true
+        backgroundImageView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor).isActive = true
+        backgroundImageView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor).isActive = true
+        backgroundImageView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: 100).isActive = true
+        backgroundImageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        backgroundImageView.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true
+   
+        
         // Logo Image View Constraints
         
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
