@@ -12,6 +12,7 @@ import UIKit
 
 class MainMenuViewController: UIViewController {
     var menuView: MainMenuView!
+    let viewModel = MainMenuViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +25,34 @@ class MainMenuViewController: UIViewController {
     
     func setup() {
         setupView()
+        updateWelcomeLabel()
+        setupNav()
 //        addButtonTarget()
     }
     
+    func setupNav() {
+        navigationItem.title = "100React"
+        
+        let logo = UIImage(named: "100ReactLogo")?.withRenderingMode(.alwaysOriginal)
+        let logoBtn = UIButton(type: .system)
+        logoBtn.isUserInteractionEnabled = false
+        logoBtn.setImage(logo, for: .normal)
+        logoBtn.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        logoBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: logoBtn)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "AlternateGrey")
+    }
+    
+    func updateWelcomeLabel() {
+        let user = viewModel.updateWelcomeLabel()
+        menuView.welcomeLabel.text = "Welcome \(user)"
+    }
+    
+    @objc func logoutTapped() {
+        viewModel.logout()
+    }
     
     
     func setupView() {

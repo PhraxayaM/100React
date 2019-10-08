@@ -20,13 +20,13 @@ class MainMenuView: UIView {
         
     }
     func setupView() {
-        backgroundColor = #colorLiteral(red: 0.8039215686, green: 0.8980392157, blue:0.9254901961, alpha: 1)
+        backgroundColor = UIColor(named: "BackgroundColor")
         setupSubViews()
         setViewContraints()
     }
     
     func setupSubViews() {
-        addSubview(logoImageView)
+//        addSubview(logoImageView)
         addSubview(welcomeLabel)
         addSubview(createSessionButton)
         addSubview(previousSessionButton)
@@ -41,8 +41,9 @@ class MainMenuView: UIView {
     
     let welcomeLabel: UILabel = {
         let label = UILabel()
-        label.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        label.font  = UIFont(name: "AktivGrotesk", size: 25)
+        label.textColor = UIColor(named: "TextColor")
+//        label.font  = UIFont(name: "AktivGrotesk-Bold", size: 25)
+        label.font = UIFont.boldSystemFont(ofSize: 25)
         label.text =  "Welcome User"
         label.textAlignment = .center
         

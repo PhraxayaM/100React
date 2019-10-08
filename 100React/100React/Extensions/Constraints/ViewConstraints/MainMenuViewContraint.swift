@@ -12,15 +12,17 @@ extension MainMenuView {
     
     func setViewContraints() {
         
-        logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0).isActive =  true
-        logoImageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
-        logoImageView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.4).isActive = true
-        logoImageView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.2).isActive  =  true
-        logoImageView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor) .isActive = true
+        
+        
+//        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+//        logoImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0).isActive =  true
+//        logoImageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+//        logoImageView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.4).isActive = true
+//        logoImageView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.9).isActive  =  true
+//        logoImageView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor) .isActive = true
         
         welcomeLabel.translatesAutoresizingMaskIntoConstraints  = false
-        welcomeLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 100).isActive = true
+        welcomeLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
         welcomeLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         
         createSessionButton.translatesAutoresizingMaskIntoConstraints =  false

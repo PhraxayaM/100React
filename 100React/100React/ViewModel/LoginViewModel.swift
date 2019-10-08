@@ -15,10 +15,11 @@ class LoginViewModel {
     let keychain = KeychainSwift()
     let defaults = UserDefaults.standard
     
-    func loginTapped(username: String, password: String) -> Bool {
+    func loginTapped(username: String, password: String) {
         let user = username
         let pass = password
         network.login(params: ["username": user, "password": pass], completion: { response in
+            print("should print first")
             guard let token = response["token"] else { return }
             guard let user = response["username"] else { return }
             
@@ -26,12 +27,14 @@ class LoginViewModel {
             self.defaults.set(user, forKey: "User")
             self.defaults.set(true, forKey: "LoggedIn")
             
+            DispatchQueue.main.async {
+                let nav = UINavigationController()
+                nav.viewControllers = [MainMenuViewController()]
+                UIApplication.shared.windows.first?.rootViewController = nav
+            }
+            
+            
         })
-        
-        if self.defaults.bool(forKey: "LoggedIn") {
-            return true
-        }
-        return false
     }
     
 }

@@ -9,7 +9,10 @@
 import Foundation
 
 class NetworkingService {
-
+    
+    var loginSuccessful = false
+    
+    
     func login(params: Dictionary<String, Any>, completion: @escaping ([String: String])->()) {
         
         
@@ -32,6 +35,7 @@ class NetworkingService {
         let task = session.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
                 print(error?.localizedDescription ?? "No data")
+                self.loginSuccessful = false
                 return
             }
             
@@ -42,6 +46,7 @@ class NetworkingService {
             // Validate response data is in expected format
             guard let mime = response?.mimeType, mime == "application/json" else {
                 print("Wrong MIME type!")
+                self.loginSuccessful = false
                 return
             }
             
@@ -49,10 +54,11 @@ class NetworkingService {
             
 //            print(responseJSON as Any)
             if let responseJSON = responseJSON {
-                if responseJSON == nil {
-                    return
-                }
+//                if responseJSON == nil {
+//                    return
+//                }
                 print(responseJSON as Any)
+                self.loginSuccessful = true
                 completion(responseJSON)
             }
         }
