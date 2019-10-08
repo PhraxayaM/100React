@@ -37,8 +37,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
             
            
-            window!.rootViewController = IndividualSessionController()
-            window!.makeKeyAndVisible()
+//            window!.rootViewController = IndividualSessionController()
+//            window!.makeKeyAndVisible()
             
             
 //            let window = UIWindow(windowScene: windowScene)
