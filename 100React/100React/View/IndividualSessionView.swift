@@ -28,14 +28,11 @@ class IndividualSessionView: UIView {
     }
     
     func setupSubViews() {
-        addSubview(logoImageView)
-        addSubview(currentViewLabel)
         addSubview(sessionTitleField)
         addSubview(taskOneField)
         addSubview(taskTwoField)
         addSubview(taskThreeField)
         addSubview(taskFourField)
-        addSubview(deleteButton)
         addSubview(createButton)
         addSubview(titleFieldLabel)
         addSubview(taskOneLabel)
@@ -44,27 +41,12 @@ class IndividualSessionView: UIView {
         addSubview(taskFourLabel)
     }
     
-    let logoImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "100ReactLogo")
-        
-        return imageView
-        
-    }()
+
     
-    let currentViewLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
-        label.font = UIFont(name: "AktivGrotesk", size: 25)
-        label.text = "Individual Session"
-        label.textAlignment = .center
-        
-        return label
-    }()
     
     let titleFieldLabel: UILabel = {
         let label = UILabel()
-        label.textColor = #colorLiteral(red: 0.06274510175, green: 0, blue: 0.1921568662, alpha: 1)
+        label.textColor = UIColor(named: "TextColor")
         label.font = UIFont(name: "AktivGrotesk", size: 15)
         label.text  = "Session Title"
         label.textAlignment = .center
@@ -74,7 +56,7 @@ class IndividualSessionView: UIView {
     
     let taskOneLabel: UILabel = {
         let label = UILabel()
-        label.textColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+        label.textColor = UIColor(named: "TextColor")
         label.font = UIFont(name: "AktivGrotesk", size: 15)
         label.text = "Task One"
         label.textAlignment = .center
@@ -84,7 +66,7 @@ class IndividualSessionView: UIView {
     
     let taskTwoLabel: UILabel = {
         let label = UILabel()
-        label.textColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+        label.textColor = UIColor(named: "TextColor")
         label.font = UIFont(name: "AktivGrotesk", size: 15)
         label.text = "Task Two"
         label.textAlignment = .center
@@ -94,7 +76,7 @@ class IndividualSessionView: UIView {
     
     let taskThreeLabel: UILabel = {
         let label = UILabel()
-        label.textColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+        label.textColor = UIColor(named: "TextColor")
         label.font = UIFont(name: "AktivGrotesk", size: 15)
         label.text = "Task Three"
         label.textAlignment = .center
@@ -104,7 +86,7 @@ class IndividualSessionView: UIView {
     
     let taskFourLabel: UILabel = {
         let label = UILabel()
-        label.textColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+        label.textColor = UIColor(named: "TextColor")
         label.font = UIFont(name: "AktivGrotesk", size: 15)
         label.text = "Task Four"
         label.textAlignment = .center
@@ -118,7 +100,8 @@ class IndividualSessionView: UIView {
         textField.placeholder = "Session Title"
         textField.font = UIFont(name: "AktivGrotesk", size: 25)
         textField.borderStyle = UITextField.BorderStyle.roundedRect
-        textField.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        textField.backgroundColor = UIColor(named: "FieldColor")
+        textField.textColor = UIColor(named: "TextColor")
         
         return textField
     }()
@@ -131,7 +114,8 @@ class IndividualSessionView: UIView {
         textField.placeholder = "Task One"
         textField.font = UIFont(name: "AktivGrotesk", size: 25)
         textField.borderStyle = UITextField.BorderStyle.roundedRect
-        textField.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        textField.backgroundColor = UIColor(named: "FieldColor")
+        textField.textColor = UIColor(named: "TextColor")
         
         return textField
     }()
@@ -142,7 +126,8 @@ class IndividualSessionView: UIView {
         textField.placeholder = "Task Two"
         textField.font = UIFont(name: "AktivGrotesk", size: 25)
         textField.borderStyle = UITextField.BorderStyle.roundedRect
-        textField.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        textField.backgroundColor = UIColor(named: "FieldColor")
+        textField.textColor = UIColor(named: "TextColor")
         
         return textField
     }()
@@ -153,7 +138,8 @@ class IndividualSessionView: UIView {
         textField.placeholder = "Task Three"
         textField.font = UIFont(name: "AktivGrotesk", size: 25)
         textField.borderStyle = UITextField.BorderStyle.roundedRect
-        textField.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        textField.backgroundColor = UIColor(named: "FieldColor")
+        textField.textColor = UIColor(named: "TextColor")
         
         return textField
     }()
@@ -164,26 +150,19 @@ class IndividualSessionView: UIView {
         textField.placeholder = "Task Four"
         textField.font = UIFont(name: "AktivGrotesk", size: 25)
         textField.borderStyle = UITextField.BorderStyle.roundedRect
-        textField.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        textField.backgroundColor = UIColor(named: "FieldColor")
+        textField.textColor = UIColor(named: "TextColor")
         
         
         return textField
     }()
     
-    let deleteButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        let buttonText = NSMutableAttributedString(attributedString: NSMutableAttributedString(string: "Delete", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor.systemBlue]))
-        button.setAttributedTitle(buttonText, for: .normal)
-        
-        return button
-        
-    }()
+
     
     let createButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
-        let buttonText = NSMutableAttributedString(attributedString: NSMutableAttributedString(string: "Create", attributes: [NSMutableAttributedString.Key.font:UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor.systemBlue]))
+        button.backgroundColor = UIColor(named: "ButtonColor")
+        let buttonText = NSMutableAttributedString(attributedString: NSMutableAttributedString(string: "Create", attributes: [NSMutableAttributedString.Key.font:UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor(named: "BackgroundColor")]))
         button.setAttributedTitle(buttonText, for: .normal)
         
         return button

@@ -14,19 +14,9 @@ extension IndividualSessionView {
     func setViewConstraints() {
         
         
-        logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        logoImageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor, constant: 0).isActive = true
-        logoImageView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.4).isActive = true
-        logoImageView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.2).isActive = true
-        logoImageView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor).isActive = true
-        
-        currentViewLabel.translatesAutoresizingMaskIntoConstraints = false
-        currentViewLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 100).isActive = true
-        currentViewLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
-        
+     
         titleFieldLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleFieldLabel.topAnchor.constraint(equalTo: currentViewLabel.bottomAnchor, constant: 50).isActive = true
+        titleFieldLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
         titleFieldLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         
         taskOneLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -46,7 +36,7 @@ extension IndividualSessionView {
         taskFourLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
 
         sessionTitleField.translatesAutoresizingMaskIntoConstraints = false
-        sessionTitleField.topAnchor.constraint(equalTo: currentViewLabel.bottomAnchor, constant: 100).isActive = true
+        sessionTitleField.topAnchor.constraint(equalTo: titleFieldLabel.bottomAnchor, constant: 10).isActive = true
         sessionTitleField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         sessionTitleField.widthAnchor.constraint(equalToConstant: 300).isActive  = true
         
@@ -70,15 +60,10 @@ extension IndividualSessionView {
         taskFourField.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         taskFourField.widthAnchor.constraint(equalToConstant: 300).isActive = true
         
-        deleteButton.translatesAutoresizingMaskIntoConstraints = false
-        deleteButton.topAnchor.constraint(equalTo: taskFourField.bottomAnchor, constant: 30).isActive = true
-//        deleteButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
-        deleteButton.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 100).isActive = true
-        deleteButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
         createButton.translatesAutoresizingMaskIntoConstraints = false
         createButton.topAnchor.constraint(equalTo: taskFourField.bottomAnchor, constant: 30).isActive = true
-        createButton.leftAnchor.constraint(equalTo: deleteButton.rightAnchor, constant: 20).isActive = true
+        createButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         createButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
     }
     

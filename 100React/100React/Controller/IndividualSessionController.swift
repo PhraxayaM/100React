@@ -20,6 +20,20 @@ class IndividualSessionController: UIViewController {
     
     func setup() {
         setupView()
+        setupNav()
+    }
+    
+    func setupNav() {
+        navigationItem.title = "New Session"
+        
+        let logo = UIImage(named: "100ReactLogo")?.withRenderingMode(.alwaysOriginal)
+        let logoBtn = UIButton(type: .system)
+        logoBtn.isUserInteractionEnabled = false
+        logoBtn.setImage(logo, for: .normal)
+        logoBtn.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        logoBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: logoBtn)
     }
     
     func setupView() {

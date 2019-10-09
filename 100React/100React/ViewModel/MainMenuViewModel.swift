@@ -30,7 +30,7 @@ class MainMenuViewModel {
         
         print("Logged Out Successfully")
         
-        
     }
+    
     
 }

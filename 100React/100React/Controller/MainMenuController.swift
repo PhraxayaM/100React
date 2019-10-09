@@ -27,7 +27,7 @@ class MainMenuViewController: UIViewController {
         setupView()
         updateWelcomeLabel()
         setupNav()
-//        addButtonTarget()
+        addButtonTarget()
     }
     
     func setupNav() {
@@ -59,20 +59,16 @@ class MainMenuViewController: UIViewController {
         let mainView = MainMenuView(frame: self.view.frame)
         self.menuView = mainView
         self.view.addSubview(menuView)
-        
-//        setRecipeDetailsViewConstraints()
-//    }
-//
-//    func addButtonTarget() {
-//        loginView.loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
-//    }
-//
-//    @objc func loginTapped() {
-//        viewModel.loginTapped()
-//    }
+    }
     
-
+    func addButtonTarget() {
+        menuView.createSessionButton.addTarget(self, action: #selector(newSessionTapped), for: .touchUpInside)
+    }
+    
+    @objc func newSessionTapped() {
+        let newSessionVC = IndividualSessionController()
+        navigationController?.pushViewController(newSessionVC, animated: true)
+    }
     
     
-}
 }

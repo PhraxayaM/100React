@@ -19,7 +19,7 @@ class NetworkingService {
         // prepare json data
         
         let jsonData = try? JSONSerialization.data(withJSONObject: params)
-        print(params)
+//        print(params)
         
         // create post request
         let url = URL(string: "https://100react.com/profile/api/loginAPI/")!
