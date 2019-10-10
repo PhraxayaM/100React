@@ -32,5 +32,7 @@ class CreateNewSessionController: UIViewController {
         let SessionView = CreateNewSessionView(frame: self.view.frame)
         self.newSessionView = SessionView
         self.view.addSubview(newSessionView)
-}
+    }
+    
+    
 }

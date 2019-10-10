@@ -22,11 +22,14 @@ class LoginViewModel {
             print("should print first")
             guard let token = response["token"] else { return }
             guard let user = response["username"] else { return }
+            guard let userID = response["id"] else { return }
             
-            self.keychain.set(token, forKey: "Token")
+            self.keychain.set(token as! String, forKey: "Token")
             self.defaults.set(user, forKey: "User")
             self.defaults.set(true, forKey: "LoggedIn")
+            self.defaults.set(userID as! Int, forKey: "UserID")
             
+            print(self.defaults.integer(forKey: "UserID"))
             DispatchQueue.main.async {
                 let nav = UINavigationController()
                 nav.viewControllers = [MainMenuViewController()]

@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class IndividualSessionController: UIViewController {
-    var individualSessionViewer: IndividualSessionView!
+    let viewModel = CreateSessionViewModel()
+    var individualSessionView: IndividualSessionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class IndividualSessionController: UIViewController {
     func setup() {
         setupView()
         setupNav()
+        addButtonTarget()
     }
     
     func setupNav() {
@@ -38,16 +40,37 @@ class IndividualSessionController: UIViewController {
     
     func setupView() {
         let SessionView = IndividualSessionView(frame: self.view.frame)
-        self.individualSessionViewer = SessionView
-        self.view.addSubview(individualSessionViewer)
+        self.individualSessionView = SessionView
+        self.view.addSubview(individualSessionView)
     }
+    
+      func addButtonTarget() {
+           individualSessionView.createButton.addTarget(self, action: #selector(createTapped), for: .touchUpInside)
+       }
+       
+       @objc func createTapped() {
+           let title = individualSessionView.sessionTitleField.text!
+           let taskOne = individualSessionView.taskOneField.text!
+           let taskTwo = individualSessionView.taskTwoField.text!
+           let taskThree = individualSessionView.taskThreeField.text!
+           let taskFour = individualSessionView.taskFourField.text!
+        
+           DispatchQueue.main.async {
+            self.viewModel.createPomodoro(title: title, taskOne: taskOne, taskTwo: taskTwo, taskThree: taskThree, taskFour: taskFour)
+            { pomodoroID in
+                DispatchQueue.main.async {
+                    let gameVC = PomodoroGameViewController()
+                    gameVC.pomodoroID = pomodoroID
+                    self.present(gameVC, animated: true)
+                }
+            }
+               
+           }
+    
+       }
     
     
 }
 
 
-//    func setupView() {
-//        let SessionView = CreateNewSessionView(frame: self.view.frame)
-//        self.newSessionView = SessionView
-//        self.view.addSubview(newSessionView)
-//}
+

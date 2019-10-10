@@ -20,6 +20,8 @@
 		8D1452E8234318A900CB92B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452E7234318A900CB92B8 /* LoginViewModel.swift */; };
 		8D1452EF234ADF2100CB92B8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1452EE234ADF2100CB92B8 /* NetworkingService.swift */; };
 		8DA7EA79234C4AB200F74A45 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA78234C4AB200F74A45 /* MainMenuViewModel.swift */; };
+		8DA7EA7D234EEEDA00F74A45 /* CreateSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA7C234EEEDA00F74A45 /* CreateSessionViewModel.swift */; };
+		8DA7EA7F234F084200F74A45 /* PomodoroGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA7E234F084100F74A45 /* PomodoroGameViewController.swift */; };
 		BF1FEAA915C3A2E8B994F630 /* Pods_100React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6FF66C0F339D1BAF3CD92A /* Pods_100React.framework */; };
 		CD6017BA2344F6BE00BE091D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017B92344F6BE00BE091D /* MainMenuView.swift */; };
 		CD6017BC2344FB9A00BE091D /* MainMenuViewContraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */; };
@@ -62,6 +64,8 @@
 		8D1452E7234318A900CB92B8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8D1452EE234ADF2100CB92B8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		8DA7EA78234C4AB200F74A45 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
+		8DA7EA7C234EEEDA00F74A45 /* CreateSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionViewModel.swift; sourceTree = "<group>"; };
+		8DA7EA7E234F084100F74A45 /* PomodoroGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroGameViewController.swift; sourceTree = "<group>"; };
 		CD6017B92344F6BE00BE091D /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewContraint.swift; sourceTree = "<group>"; };
 		CD6017BD23465A7D00BE091D /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			children = (
 				8D1452E7234318A900CB92B8 /* LoginViewModel.swift */,
 				8DA7EA78234C4AB200F74A45 /* MainMenuViewModel.swift */,
+				8DA7EA7C234EEEDA00F74A45 /* CreateSessionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				CD6017BD23465A7D00BE091D /* MainMenuController.swift */,
 				CD819ADA234AE48B00BBAD03 /* CreateNewSessionController.swift */,
 				CD819AE0234B807D00BBAD03 /* IndividualSessionController.swift */,
+				8DA7EA7E234F084100F74A45 /* PomodoroGameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -420,11 +426,13 @@
 				CD819ADF234B7CD800BBAD03 /* IndividualSessionConstraints.swift in Sources */,
 				8D1452BA2342F22700CB92B8 /* SceneDelegate.swift in Sources */,
 				CD819AE1234B807D00BBAD03 /* IndividualSessionController.swift in Sources */,
+				8DA7EA7D234EEEDA00F74A45 /* CreateSessionViewModel.swift in Sources */,
 				8DA7EA79234C4AB200F74A45 /* MainMenuViewModel.swift in Sources */,
 				CD6017BA2344F6BE00BE091D /* MainMenuView.swift in Sources */,
 				8D1452DD2342F31E00CB92B8 /* LoginView.swift in Sources */,
 				8D1452E62342FA5600CB92B8 /* LoginViewConstraints.swift in Sources */,
 				CD819ADB234AE48B00BBAD03 /* CreateNewSessionController.swift in Sources */,
+				8DA7EA7F234F084200F74A45 /* PomodoroGameViewController.swift in Sources */,
 				8D1452E02342F62B00CB92B8 /* LoginViewController.swift in Sources */,
 				8D1452BC2342F22700CB92B8 /* ContentView.swift in Sources */,
 				8D1452E8234318A900CB92B8 /* LoginViewModel.swift in Sources */,
