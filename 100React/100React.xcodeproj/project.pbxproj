@@ -210,7 +210,6 @@
 		8D1452E22342F9F700CB92B8 /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				8D1452E42342FA3200CB92B8 /* ControllerConstraints */,
 				8D1452E32342FA1F00CB92B8 /* ViewConstraints */,
 			);
 			path = Constraints;
@@ -225,13 +224,6 @@
 				CD819ADE234B7CD800BBAD03 /* IndividualSessionConstraints.swift */,
 			);
 			path = ViewConstraints;
-			sourceTree = "<group>";
-		};
-		8D1452E42342FA3200CB92B8 /* ControllerConstraints */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ControllerConstraints;
 			sourceTree = "<group>";
 		};
 		8D1452ED234ADF0F00CB92B8 /* Networking */ = {

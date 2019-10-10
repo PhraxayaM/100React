@@ -26,7 +26,6 @@ class MainMenuView: UIView {
     }
     
     func setupSubViews() {
-//        addSubview(logoImageView)
         addSubview(welcomeLabel)
         addSubview(createSessionButton)
         addSubview(previousSessionButton)
@@ -42,7 +41,6 @@ class MainMenuView: UIView {
     let welcomeLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor(named: "TextColor")
-//        label.font  = UIFont(name: "AktivGrotesk-Bold", size: 25)
         label.font = UIFont.boldSystemFont(ofSize: 25)
         label.text =  "Welcome User"
         label.textAlignment = .center
@@ -54,8 +52,8 @@ class MainMenuView: UIView {
     
     let createSessionButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .clear
-        let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "Create a new session", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor.systemBlue]))
+        button.backgroundColor = UIColor(named: "ButtonColor")
+        let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "Create a new session", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor(named: "BackgroundColor")!]))
         button.setAttributedTitle(buttonText, for: .normal)
         
         return button
@@ -63,8 +61,8 @@ class MainMenuView: UIView {
     
     let previousSessionButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .clear
-        let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "View Previous Session", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor.systemBlue]))
+        button.backgroundColor = UIColor(named: "ButtonColor")
+        let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "Previous Sessions", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor(named: "BackgroundColor")!]))
         button.setAttributedTitle(buttonText, for: .normal)
         
         return button
