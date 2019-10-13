@@ -22,6 +22,11 @@
 		8DA7EA79234C4AB200F74A45 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA78234C4AB200F74A45 /* MainMenuViewModel.swift */; };
 		8DA7EA7D234EEEDA00F74A45 /* CreateSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA7C234EEEDA00F74A45 /* CreateSessionViewModel.swift */; };
 		8DA7EA7F234F084200F74A45 /* PomodoroGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA7E234F084100F74A45 /* PomodoroGameViewController.swift */; };
+		8DA7EA81235286B000F74A45 /* PreviousSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA80235286B000F74A45 /* PreviousSessionsViewController.swift */; };
+		8DA7EA832352875200F74A45 /* PreviousSessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA822352875200F74A45 /* PreviousSessionsView.swift */; };
+		8DA7EA852352889600F74A45 /* PreviousSessionsViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA842352889600F74A45 /* PreviousSessionsViewConstraints.swift */; };
+		8DA7EA8723528AB000F74A45 /* PreviousSessionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA8623528AB000F74A45 /* PreviousSessionsDataSource.swift */; };
+		8DA7EA8923528AD700F74A45 /* PreviousSessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7EA8823528AD700F74A45 /* PreviousSessionsViewModel.swift */; };
 		BF1FEAA915C3A2E8B994F630 /* Pods_100React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6FF66C0F339D1BAF3CD92A /* Pods_100React.framework */; };
 		CD6017BA2344F6BE00BE091D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017B92344F6BE00BE091D /* MainMenuView.swift */; };
 		CD6017BC2344FB9A00BE091D /* MainMenuViewContraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */; };
@@ -66,6 +71,11 @@
 		8DA7EA78234C4AB200F74A45 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		8DA7EA7C234EEEDA00F74A45 /* CreateSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionViewModel.swift; sourceTree = "<group>"; };
 		8DA7EA7E234F084100F74A45 /* PomodoroGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroGameViewController.swift; sourceTree = "<group>"; };
+		8DA7EA80235286B000F74A45 /* PreviousSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSessionsViewController.swift; sourceTree = "<group>"; };
+		8DA7EA822352875200F74A45 /* PreviousSessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSessionsView.swift; sourceTree = "<group>"; };
+		8DA7EA842352889600F74A45 /* PreviousSessionsViewConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousSessionsViewConstraints.swift; sourceTree = "<group>"; };
+		8DA7EA8623528AB000F74A45 /* PreviousSessionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreviousSessionsDataSource.swift; path = 100React/Extensions/Constraints/ViewConstraints/PreviousSessionsDataSource.swift; sourceTree = SOURCE_ROOT; };
+		8DA7EA8823528AD700F74A45 /* PreviousSessionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSessionsViewModel.swift; sourceTree = "<group>"; };
 		CD6017B92344F6BE00BE091D /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewContraint.swift; sourceTree = "<group>"; };
 		CD6017BD23465A7D00BE091D /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
@@ -165,6 +175,7 @@
 				8D1452E7234318A900CB92B8 /* LoginViewModel.swift */,
 				8DA7EA78234C4AB200F74A45 /* MainMenuViewModel.swift */,
 				8DA7EA7C234EEEDA00F74A45 /* CreateSessionViewModel.swift */,
+				8DA7EA8823528AD700F74A45 /* PreviousSessionsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 				CD6017B92344F6BE00BE091D /* MainMenuView.swift */,
 				CD6017BF2346BA8400BE091D /* CreateNewSessionView.swift */,
 				CD819ADC234B77E600BBAD03 /* IndividualSessionView.swift */,
+				8DA7EA822352875200F74A45 /* PreviousSessionsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +195,7 @@
 		8D1452DB2342F2FE00CB92B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8DA7EA8623528AB000F74A45 /* PreviousSessionsDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +208,7 @@
 				CD819ADA234AE48B00BBAD03 /* CreateNewSessionController.swift */,
 				CD819AE0234B807D00BBAD03 /* IndividualSessionController.swift */,
 				8DA7EA7E234F084100F74A45 /* PomodoroGameViewController.swift */,
+				8DA7EA80235286B000F74A45 /* PreviousSessionsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1452E52342FA5600CB92B8 /* LoginViewConstraints.swift */,
+				8DA7EA842352889600F74A45 /* PreviousSessionsViewConstraints.swift */,
 				CD6017BB2344FB9A00BE091D /* MainMenuViewContraint.swift */,
 				CD6017C12346BBD900BE091D /* CreateNewSessionConstraint.swift */,
 				CD819ADE234B7CD800BBAD03 /* IndividualSessionConstraints.swift */,
@@ -412,14 +427,18 @@
 			files = (
 				CD819ADD234B77E600BBAD03 /* IndividualSessionView.swift in Sources */,
 				CD6017C22346BBD900BE091D /* CreateNewSessionConstraint.swift in Sources */,
+				8DA7EA852352889600F74A45 /* PreviousSessionsViewConstraints.swift in Sources */,
+				8DA7EA8923528AD700F74A45 /* PreviousSessionsViewModel.swift in Sources */,
 				8D1452B82342F22700CB92B8 /* AppDelegate.swift in Sources */,
 				CD6017BC2344FB9A00BE091D /* MainMenuViewContraint.swift in Sources */,
 				CD6017C02346BA8400BE091D /* CreateNewSessionView.swift in Sources */,
 				CD819ADF234B7CD800BBAD03 /* IndividualSessionConstraints.swift in Sources */,
 				8D1452BA2342F22700CB92B8 /* SceneDelegate.swift in Sources */,
 				CD819AE1234B807D00BBAD03 /* IndividualSessionController.swift in Sources */,
+				8DA7EA832352875200F74A45 /* PreviousSessionsView.swift in Sources */,
 				8DA7EA7D234EEEDA00F74A45 /* CreateSessionViewModel.swift in Sources */,
 				8DA7EA79234C4AB200F74A45 /* MainMenuViewModel.swift in Sources */,
+				8DA7EA8723528AB000F74A45 /* PreviousSessionsDataSource.swift in Sources */,
 				CD6017BA2344F6BE00BE091D /* MainMenuView.swift in Sources */,
 				8D1452DD2342F31E00CB92B8 /* LoginView.swift in Sources */,
 				8D1452E62342FA5600CB92B8 /* LoginViewConstraints.swift in Sources */,
@@ -427,6 +446,7 @@
 				8DA7EA7F234F084200F74A45 /* PomodoroGameViewController.swift in Sources */,
 				8D1452E02342F62B00CB92B8 /* LoginViewController.swift in Sources */,
 				8D1452BC2342F22700CB92B8 /* ContentView.swift in Sources */,
+				8DA7EA81235286B000F74A45 /* PreviousSessionsViewController.swift in Sources */,
 				8D1452E8234318A900CB92B8 /* LoginViewModel.swift in Sources */,
 				8D1452EF234ADF2100CB92B8 /* NetworkingService.swift in Sources */,
 				CD6017BE23465A7D00BE091D /* MainMenuController.swift in Sources */,

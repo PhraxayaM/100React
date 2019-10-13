@@ -113,5 +113,44 @@ class NetworkingService {
             }
             task.resume()
     }
+    
+    
+    func getPreviousSessions(userID: Int, completion: @escaping ([[String: Any]])->()) {
+               
+               
+               
+               // create request
+               let url = URL(string: "https://100react.com/pomodoro/api/user/\(userID)")!
+               let request = URLRequest(url: url)
+               let session = URLSession(configuration: .default)
+               
+               let task = session.dataTask(with: request) { data, response, error in
+                   guard let data = data, error == nil else {
+                       print(error?.localizedDescription ?? "No data")
+                       return
+                   }
+                   
+                   if let httpResponse = response as? HTTPURLResponse {
+                       print("Status: \(httpResponse.statusCode)")
+                   }
+                   
+                   // Validate response data is in expected format
+                   guard let mime = response?.mimeType, mime == "application/json" else {
+                       print("Wrong MIME type!")
+                       return
+                   }
+                   
+                   let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])as? [[String: Any]]
+                   
+
+                   if let responseJSON = responseJSON {
+                       print(responseJSON as Any)
+                       completion(responseJSON)
+                   }else {
+                       print("No Response")
+                   }
+               }
+               task.resume()
+       }
 
 }

@@ -63,11 +63,17 @@ class MainMenuViewController: UIViewController {
     
     func addButtonTarget() {
         menuView.createSessionButton.addTarget(self, action: #selector(newSessionTapped), for: .touchUpInside)
+        menuView.previousSessionButton.addTarget(self, action: #selector(previousSessionTapped), for: .touchUpInside)
     }
     
     @objc func newSessionTapped() {
         let newSessionVC = IndividualSessionController()
         navigationController?.pushViewController(newSessionVC, animated: true)
+    }
+    
+    @objc func previousSessionTapped() {
+        let previousSessionVC = PreviousSessionsViewController()
+        navigationController?.pushViewController(previousSessionVC, animated: true)
     }
     
     
