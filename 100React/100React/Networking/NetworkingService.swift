@@ -127,11 +127,17 @@ class NetworkingService {
                let task = session.dataTask(with: request) { data, response, error in
                    guard let data = data, error == nil else {
                        print(error?.localizedDescription ?? "No data")
+                       completion([["Success": false]])
                        return
                    }
                    
                    if let httpResponse = response as? HTTPURLResponse {
-                       print("Status: \(httpResponse.statusCode)")
+                        print("Status: \(httpResponse.statusCode)")
+						if httpResponse.statusCode == 400 {
+							completion([["Success": false]])
+							return
+						}
+						
                    }
                    
                    // Validate response data is in expected format
@@ -148,6 +154,7 @@ class NetworkingService {
                        completion(responseJSON)
                    }else {
                        print("No Response")
+                       
                    }
                }
                task.resume()

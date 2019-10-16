@@ -35,19 +35,38 @@ class LoginViewController: UIViewController {
         self.loginView = mainView
         self.view.addSubview(loginView)
         
-//        setRecipeDetailsViewConstraints()
     }
+    
+
     
     func addButtonTarget() {
         loginView.loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
     }
+	
     
     @objc func loginTapped() {
         let user = loginView.usernameField.text!
         let pass = loginView.passwordField.text!
         
+        let statusIndicator = StatusIndicatorViewController()
+        statusIndicator.modalPresentationStyle = .overCurrentContext
+        self.present(statusIndicator, animated: true)
+		
+		
         DispatchQueue.main.async {
-            self.viewModel.loginTapped(username: user, password: pass)
+            self.viewModel.loginTapped(username: user, password: pass){ success in
+                if success == false {
+					DispatchQueue.main.async {
+						statusIndicator.statusView.activityIndicator.isHidden = true
+						statusIndicator.statusView.titleLabel.text = "Login Failed: \nIncorrect Username/Password"
+						statusIndicator.statusView.dismissButton.isHidden = false
+						
+						statusIndicator.statusView.dismissButton.addTarget(statusIndicator, action: #selector(statusIndicator.dismissAlert), for: .touchUpInside)
+					}
+					
+                }
+                
+            }
             
         }
  
