@@ -11,6 +11,7 @@ import UIKit
 
 class LeaderboardViewController: UIViewController {
     
+    var userStatsView: UserStatsView!
     var leaderboardView: LeaderboardView!
     let viewModel  = LeaderboardViewModel()
     let dataSource = LeaderboardDataSource()
@@ -38,15 +39,31 @@ class LeaderboardViewController: UIViewController {
     
     
     func setup() {
-        
+
         setupTableView()
+        addButtonTarget()
     }
     func setupTableView() {
         let LeaderView = LeaderboardView(frame: self.view.frame)
         self.leaderboardView = LeaderView
         self.view.addSubview(leaderboardView)
-//        view.addSubview(tableView)
     }
     
+    func addButtonTarget() {
+        leaderboardView.userStatsButton.addTarget(self, action: #selector(userStatsTapped), for: .touchUpInside)
+//        menuView.createSessionButton.addTarget(self, action: #selector(newSessionTapped), for: .touchUpInside)
+
+    }
+    
+    @objc func leaderboardTapped() {
+        let newSessionVC = UserRankingViewController()
+        navigationController?.pushViewController(newSessionVC, animated: true)
+    }
+    
+    @objc func userStatsTapped() {
+        let newSessionVC = UserStatsViewController()
+        navigationController?.pushViewController(newSessionVC, animated: true)
+        
+    }
 }
 

@@ -1,53 +1,48 @@
 //
-//  LeaderboardView.swift
+//  UserStatsView.swift
 //  100React
 //
-//  Created by MattHew Phraxayavong on 10/16/19.
+//  Created by MattHew Phraxayavong on 10/17/19.
 //  Copyright © 2019 Ricardo Rodriguez. All rights reserved.
 //
 
 import Foundation
 import UIKit
+//
+class UserStatsView: UIView {
 
-
-class LeaderboardView: UIView {
-    let tableView = UITableView()
-    
     override init(frame: CGRect) {
         super .init(frame: frame)
-        
-        setupView()
-        setupViewConstraints()
-    }
-    
+          
+          setupView()
+          setupViewConstraints()
+      }
+ 
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupView()  {
+           fatalError("init(coder:) has not been implemented")
+       }
+
+    func setupView() {
         backgroundColor = UIColor(named: "BackgroundColor")
-        tableView.backgroundColor = backgroundColor
-        addSubview(tableView)
         addSubview(logoImageView)
         addSubview(leaderboardsButton)
         addSubview(userStatsButton)
         addSubview(userRankingButton)
-
+        addSubview(backCellBackgroundLabel)
+        
     }
-    
 
     let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "100ReactLogo")
-        imageView.contentMode = .scaleAspectFit
-        
+
         return imageView
     }()
     
     let leaderboardsButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(named: "ButtonColor")
-        let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "Leaderboards", attributes: [NSMutableAttributedString.Key.font: UIFont.systemFont(ofSize: 15), .foregroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]))
+        button.backgroundColor = UIColor(cgColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "Leaderboards", attributes: [NSMutableAttributedString.Key.font: UIFont.systemFont(ofSize: 15), .foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]))
         button.setAttributedTitle(buttonText, for: .normal)
         
         return button
@@ -56,7 +51,7 @@ class LeaderboardView: UIView {
     
     let userStatsButton: UIButton  = {
         let button = UIButton()
-        button.backgroundColor = UIColor(cgColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        button.backgroundColor = UIColor(named: "ButtonColor")
         let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "User Stats", attributes: [NSMutableAttributedString.Key.font: UIFont.systemFont(ofSize: 15), .foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]))
         button.setAttributedTitle(buttonText, for: .normal)
         
@@ -73,6 +68,23 @@ class LeaderboardView: UIView {
         return button
         
     }()
-
     
+    
+//    let backCellBackgroundLabel: UILabel = {
+//        let label = UILabel()
+//        label.backgroundColor = UIColor(cgColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+//
+//        return label
+//
+//    }()
+    let backCellBackgroundLabel: UIImageView = {
+
+    let imageView = UIImageView()
+    imageView.image = UIImage(named: "Static")
+
+    return imageView
+    
+
+
+    }()
 }

@@ -1,17 +1,15 @@
 //
-//  LeaderboardView.swift
+//  UserRankingView.swift
 //  100React
 //
-//  Created by MattHew Phraxayavong on 10/16/19.
+//  Created by MattHew Phraxayavong on 10/18/19.
 //  Copyright © 2019 Ricardo Rodriguez. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-
-class LeaderboardView: UIView {
-    let tableView = UITableView()
+class UserRankingView: UIView {
     
     override init(frame: CGRect) {
         super .init(frame: frame)
@@ -26,8 +24,6 @@ class LeaderboardView: UIView {
     
     func setupView()  {
         backgroundColor = UIColor(named: "BackgroundColor")
-        tableView.backgroundColor = backgroundColor
-        addSubview(tableView)
         addSubview(logoImageView)
         addSubview(leaderboardsButton)
         addSubview(userStatsButton)
@@ -74,5 +70,4 @@ class LeaderboardView: UIView {
         
     }()
 
-    
 }

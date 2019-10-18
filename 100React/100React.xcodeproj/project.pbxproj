@@ -44,6 +44,15 @@
 		CD67101E2359230D00A7662D /* LeaderboardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67101D2359230D00A7662D /* LeaderboardDataSource.swift */; };
 		CD6710202359293700A7662D /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67101F2359293700A7662D /* LeaderboardTableViewCell.swift */; };
 		CD67102223592B2D00A7662D /* LeaderboardTableViewCellConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67102123592B2D00A7662D /* LeaderboardTableViewCellConstraints.swift */; };
+		CD6710242359689600A7662D /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6710232359689600A7662D /* UserStatsView.swift */; };
+		CD671026235A115500A7662D /* UserRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD671025235A115500A7662D /* UserRankingView.swift */; };
+		CD671028235A137F00A7662D /* UserRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD671027235A137F00A7662D /* UserRankingViewController.swift */; };
+		CD67102A235A13C200A7662D /* UserRankingViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD671029235A13C200A7662D /* UserRankingViewConstraints.swift */; };
+		CD67102C235A25A800A7662D /* UserStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67102B235A25A800A7662D /* UserStatsViewController.swift */; };
+		CD67102E235A2BEE00A7662D /* UserStatsViewContraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67102D235A2BEE00A7662D /* UserStatsViewContraints.swift */; };
+		CD671030235A46C600A7662D /* personalStatsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67102F235A46C600A7662D /* personalStatsCollectionView.swift */; };
+		CD671032235A489700A7662D /* PersonalStatsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD671031235A489600A7662D /* PersonalStatsCollectionViewController.swift */; };
+		CD671035235A57EB00A7662D /* PersonalStatsCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD671034235A57EB00A7662D /* PersonalStatsCollectionViewDelegates.swift */; };
 		CD819ADB234AE48B00BBAD03 /* CreateNewSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819ADA234AE48B00BBAD03 /* CreateNewSessionController.swift */; };
 		CD819ADD234B77E600BBAD03 /* IndividualSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819ADC234B77E600BBAD03 /* IndividualSessionView.swift */; };
 		CD819ADF234B7CD800BBAD03 /* IndividualSessionConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819ADE234B7CD800BBAD03 /* IndividualSessionConstraints.swift */; };
@@ -103,6 +112,15 @@
 		CD67101D2359230D00A7662D /* LeaderboardDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeaderboardDataSource.swift; path = 100React/ViewModel/LeaderboardDataSource.swift; sourceTree = SOURCE_ROOT; };
 		CD67101F2359293700A7662D /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
 		CD67102123592B2D00A7662D /* LeaderboardTableViewCellConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCellConstraints.swift; sourceTree = "<group>"; };
+		CD6710232359689600A7662D /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		CD671025235A115500A7662D /* UserRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRankingView.swift; sourceTree = "<group>"; };
+		CD671027235A137F00A7662D /* UserRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRankingViewController.swift; sourceTree = "<group>"; };
+		CD671029235A13C200A7662D /* UserRankingViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRankingViewConstraints.swift; sourceTree = "<group>"; };
+		CD67102B235A25A800A7662D /* UserStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsViewController.swift; sourceTree = "<group>"; };
+		CD67102D235A2BEE00A7662D /* UserStatsViewContraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsViewContraints.swift; sourceTree = "<group>"; };
+		CD67102F235A46C600A7662D /* personalStatsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalStatsCollectionView.swift; sourceTree = "<group>"; };
+		CD671031235A489600A7662D /* PersonalStatsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalStatsCollectionViewController.swift; sourceTree = "<group>"; };
+		CD671034235A57EB00A7662D /* PersonalStatsCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalStatsCollectionViewDelegates.swift; sourceTree = "<group>"; };
 		CD819ADA234AE48B00BBAD03 /* CreateNewSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewSessionController.swift; sourceTree = "<group>"; };
 		CD819ADC234B77E600BBAD03 /* IndividualSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSessionView.swift; sourceTree = "<group>"; };
 		CD819ADE234B7CD800BBAD03 /* IndividualSessionConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualSessionConstraints.swift; sourceTree = "<group>"; };
@@ -213,7 +231,10 @@
 				8DA7EA822352875200F74A45 /* PreviousSessionsView.swift */,
 				8DA7EA8A2356D3B800F74A45 /* StatusIndicatorView.swift */,
 				CD67100F2357B81800A7662D /* LeaderboardView.swift */,
+				CD671025235A115500A7662D /* UserRankingView.swift */,
+				CD67102F235A46C600A7662D /* personalStatsCollectionView.swift */,
 				CD67101F2359293700A7662D /* LeaderboardTableViewCell.swift */,
+				CD6710232359689600A7662D /* UserStatsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,6 +259,9 @@
 				8DA7EA80235286B000F74A45 /* PreviousSessionsViewController.swift */,
 				CD6710152358AB6200A7662D /* LeaderboardViewController.swift */,
 				8DA7EA8E2356D69E00F74A45 /* StatusIndicatorViewController.swift */,
+				CD671027235A137F00A7662D /* UserRankingViewController.swift */,
+				CD67102B235A25A800A7662D /* UserStatsViewController.swift */,
+				CD671031235A489600A7662D /* PersonalStatsCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +269,7 @@
 		8D1452E12342F9F000CB92B8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CD671033235A572900A7662D /* CollectionView */,
 				8D1452E22342F9F700CB92B8 /* Constraints */,
 			);
 			path = Extensions;
@@ -270,6 +295,8 @@
 				CD6710132358A9B700A7662D /* LeaderboardViewConstraints.swift */,
 				CD6710172358B41900A7662D /* LeaderboardTableViewConstraints.swift */,
 				CD67102123592B2D00A7662D /* LeaderboardTableViewCellConstraints.swift */,
+				CD671029235A13C200A7662D /* UserRankingViewConstraints.swift */,
+				CD67102D235A2BEE00A7662D /* UserStatsViewContraints.swift */,
 			);
 			path = ViewConstraints;
 			sourceTree = "<group>";
@@ -280,6 +307,14 @@
 				8D1452EE234ADF2100CB92B8 /* NetworkingService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD671033235A572900A7662D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CD671034235A57EB00A7662D /* PersonalStatsCollectionViewDelegates.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		E89713F0EBB226222F8B49B8 /* Frameworks */ = {
@@ -458,15 +493,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD67102C235A25A800A7662D /* UserStatsViewController.swift in Sources */,
 				CD67102223592B2D00A7662D /* LeaderboardTableViewCellConstraints.swift in Sources */,
 				CD819ADD234B77E600BBAD03 /* IndividualSessionView.swift in Sources */,
 				CD6017C22346BBD900BE091D /* CreateNewSessionConstraint.swift in Sources */,
+				CD671032235A489700A7662D /* PersonalStatsCollectionViewController.swift in Sources */,
 				8DA7EA8F2356D69E00F74A45 /* StatusIndicatorViewController.swift in Sources */,
 				8DA7EA852352889600F74A45 /* PreviousSessionsViewConstraints.swift in Sources */,
 				CD6710142358A9B700A7662D /* LeaderboardViewConstraints.swift in Sources */,
 				8DA7EA8923528AD700F74A45 /* PreviousSessionsViewModel.swift in Sources */,
+				CD671030235A46C600A7662D /* personalStatsCollectionView.swift in Sources */,
+				CD671035235A57EB00A7662D /* PersonalStatsCollectionViewDelegates.swift in Sources */,
 				CD6710202359293700A7662D /* LeaderboardTableViewCell.swift in Sources */,
 				8D1452B82342F22700CB92B8 /* AppDelegate.swift in Sources */,
+				CD671028235A137F00A7662D /* UserRankingViewController.swift in Sources */,
 				CD6017BC2344FB9A00BE091D /* MainMenuViewContraint.swift in Sources */,
 				CD6017C02346BA8400BE091D /* CreateNewSessionView.swift in Sources */,
 				CD6710162358AB6200A7662D /* LeaderboardViewController.swift in Sources */,
@@ -481,14 +521,18 @@
 				8DA7EA8B2356D3B800F74A45 /* StatusIndicatorView.swift in Sources */,
 				8DA7EA79234C4AB200F74A45 /* MainMenuViewModel.swift in Sources */,
 				8DA7EA8723528AB000F74A45 /* PreviousSessionsDataSource.swift in Sources */,
+				CD6710242359689600A7662D /* UserStatsView.swift in Sources */,
+				CD67102E235A2BEE00A7662D /* UserStatsViewContraints.swift in Sources */,
 				CD6017BA2344F6BE00BE091D /* MainMenuView.swift in Sources */,
 				8D1452DD2342F31E00CB92B8 /* LoginView.swift in Sources */,
 				8D1452E62342FA5600CB92B8 /* LoginViewConstraints.swift in Sources */,
 				CD819ADB234AE48B00BBAD03 /* CreateNewSessionController.swift in Sources */,
 				8DA7EA7F234F084200F74A45 /* PomodoroGameViewController.swift in Sources */,
+				CD67102A235A13C200A7662D /* UserRankingViewConstraints.swift in Sources */,
 				8D1452E02342F62B00CB92B8 /* LoginViewController.swift in Sources */,
 				8D1452BC2342F22700CB92B8 /* ContentView.swift in Sources */,
 				8DA7EA81235286B000F74A45 /* PreviousSessionsViewController.swift in Sources */,
+				CD671026235A115500A7662D /* UserRankingView.swift in Sources */,
 				8D1452E8234318A900CB92B8 /* LoginViewModel.swift in Sources */,
 				8D1452EF234ADF2100CB92B8 /* NetworkingService.swift in Sources */,
 				CD6017BE23465A7D00BE091D /* MainMenuController.swift in Sources */,

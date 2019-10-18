@@ -1,23 +1,17 @@
 //
-//  LeaderboardViewConstraints.swift
+//  UserStatsViewContraints.swift
 //  100React
 //
-//  Created by MattHew Phraxayavong on 10/17/19.
+//  Created by MattHew Phraxayavong on 10/18/19.
 //  Copyright © 2019 Ricardo Rodriguez. All rights reserved.
 //
 
 import Foundation
+import UIKit
 
-extension LeaderboardView {
-    
+extension  UserStatsView {
     func setupViewConstraints() {
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor).isActive = true
-        tableView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.5).isActive = true
-        
+
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         logoImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
         logoImageView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
@@ -39,16 +33,24 @@ extension LeaderboardView {
         userStatsButton.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 130).isActive = true
         userStatsButton.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -100).isActive = true
         userStatsButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-//        userStatsButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
-
-//        userRankingButton.translatesAutoresizingMaskIntoConstraints = false
-//        userRankingButton.topAnchor.constraint(equalTo: leaderboardsButton.topAnchor).isActive = true
-//        userRankingButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
-////        userRankingButton.leftAnchor.constraint(equalTo: userStatsButton.rightAnchor, constant: 100).isActive = true
-//        userRankingButton.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
-//        userRankingButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-//        userRankingButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
-//
-     }
-    
+        
+        backCellBackgroundLabel.translatesAutoresizingMaskIntoConstraints = false
+        backCellBackgroundLabel.topAnchor.constraint(equalTo: userStatsButton.bottomAnchor, constant: 50).isActive = true
+        backCellBackgroundLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        backCellBackgroundLabel.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
+        backCellBackgroundLabel.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 50).isActive = true
+        backCellBackgroundLabel.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -50).isActive = true
+        backCellBackgroundLabel.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        backCellBackgroundLabel.widthAnchor.constraint(equalToConstant: 500).isActive =  true
+        //        userStatsButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        //        userRankingButton.translatesAutoresizingMaskIntoConstraints = false
+        //        userRankingButton.topAnchor.constraint(equalTo: leaderboardsButton.topAnchor).isActive = true
+        //        userRankingButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        ////        userRankingButton.leftAnchor.constraint(equalTo: userStatsButton.rightAnchor, constant: 100).isActive = true
+        //        userRankingButton.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
+        //        userRankingButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        //        userRankingButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        //
+    }
 }
