@@ -32,7 +32,6 @@ func setViewContraints() {
     groupSessionButton.centerXAnchor.constraint(equalTo:
         safeAreaLayoutGuide.centerXAnchor).isActive = true
     
-    
 }
 
 }

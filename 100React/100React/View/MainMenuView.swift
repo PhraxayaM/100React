@@ -29,6 +29,7 @@ class MainMenuView: UIView {
         addSubview(welcomeLabel)
         addSubview(createSessionButton)
         addSubview(previousSessionButton)
+        addSubview(leaderboardButton)
     }
     let logoImageView: UIImageView = {
         let imageView = UIImageView()
@@ -68,6 +69,14 @@ class MainMenuView: UIView {
         return button
     }()
     
+    let leaderboardButton: UIButton = {
+          let button = UIButton()
+        button.backgroundColor = UIColor(named: "ButtonColor")
+          let buttonText = NSMutableAttributedString(attributedString: NSAttributedString(string: "Leaderboard", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), .foregroundColor: UIColor(named: "BackgroundColor")!]))
+          button.setAttributedTitle(buttonText, for: .normal)
+          
+          return button
+      }()
     
 }
 

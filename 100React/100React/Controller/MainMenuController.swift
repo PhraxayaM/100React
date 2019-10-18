@@ -64,6 +64,7 @@ class MainMenuViewController: UIViewController {
     func addButtonTarget() {
         menuView.createSessionButton.addTarget(self, action: #selector(newSessionTapped), for: .touchUpInside)
         menuView.previousSessionButton.addTarget(self, action: #selector(previousSessionTapped), for: .touchUpInside)
+        menuView.leaderboardButton.addTarget(self, action: #selector(leaderboardTapped), for: .touchUpInside)
     }
     
     @objc func newSessionTapped() {
@@ -76,5 +77,9 @@ class MainMenuViewController: UIViewController {
         navigationController?.pushViewController(previousSessionVC, animated: true)
     }
     
+    @objc func leaderboardTapped() {
+        let leaderboardVC = LeaderboardViewController()
+        navigationController?.pushViewController(leaderboardVC, animated: true)
+    }
     
 }

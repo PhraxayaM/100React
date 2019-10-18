@@ -69,5 +69,7 @@ class CreateNewSessionView: UIView {
 
         return button
     }()
+    
+  
 
 }
