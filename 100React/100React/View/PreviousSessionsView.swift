@@ -34,10 +34,8 @@ class PreviousSessionsView: UIView {
 
     let tableView: UITableView = {
         let tableview = UITableView()
-        let title = UILabel()
-        title.text = "test"
-        
-        tableview.tableHeaderView = title
+		tableview.backgroundColor = UIColor(named: "BackgroundColor")
+		tableview.tableFooterView = UIView()
         return tableview
     }()
     

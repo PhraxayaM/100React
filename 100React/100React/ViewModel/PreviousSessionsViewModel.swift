@@ -9,21 +9,20 @@
 import Foundation
 import UIKit
 
-class PreviousSessionsViewModel: UITableViewController {
+class PreviousSessionsViewModel {
     
     let network = NetworkingService()
     let defaults = UserDefaults.standard
     
     
-    var previousSessions =  [String]()
+    var previousSessions =  Sessions()
 
     func populatePreviousSessionsArray(completion: @escaping ()->()) {
         let userID = self.defaults.integer(forKey: "UserID")
         network.getPreviousSessions(userID: userID){ response in
             for item in response {
-                self.previousSessions.append(item["title"] as! String)
+                self.previousSessions.append(item)
             }
-            print(self.previousSessions)
             completion()
         }
     }

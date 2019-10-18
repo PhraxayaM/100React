@@ -25,7 +25,9 @@ class PreviousSessionsViewController: UIViewController {
      
             DispatchQueue.main.async {
                 self.previousSessionsView.tableView.dataSource = self.dataSource
-                self.previousSessionsView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+				self.previousSessionsView.tableView.delegate = self.dataSource
+                self.previousSessionsView.tableView.register(PreviousSessionsTableViewCell.self, forCellReuseIdentifier: "cell")
+				self.previousSessionsView.tableView.tableFooterView = UIView()
                 self.previousSessionsView.tableView.reloadData()
 
             }

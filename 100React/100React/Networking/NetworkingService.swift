@@ -115,7 +115,7 @@ class NetworkingService {
     }
     
     
-    func getPreviousSessions(userID: Int, completion: @escaping ([[String: Any]])->()) {
+    func getPreviousSessions(userID: Int, completion: @escaping ([Session])->()) {
                
                
                
@@ -127,14 +127,12 @@ class NetworkingService {
                let task = session.dataTask(with: request) { data, response, error in
                    guard let data = data, error == nil else {
                        print(error?.localizedDescription ?? "No data")
-                       completion([["Success": false]])
                        return
                    }
                    
                    if let httpResponse = response as? HTTPURLResponse {
                         print("Status: \(httpResponse.statusCode)")
 						if httpResponse.statusCode == 400 {
-							completion([["Success": false]])
 							return
 						}
 						
@@ -149,13 +147,15 @@ class NetworkingService {
                    let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])as? [[String: Any]]
                    
 
-                   if let responseJSON = responseJSON {
-                       print(responseJSON as Any)
-                       completion(responseJSON)
-                   }else {
-                       print("No Response")
-                       
-                   }
+                  do {
+					   let decoder = JSONDecoder()
+					   let decoded = try decoder.decode(Sessions.self, from: data)
+					   print(decoded)
+					   let sessions = decoded
+					   completion(sessions)
+				   } catch {
+					   print(error)
+				   }
                }
                task.resume()
        }
